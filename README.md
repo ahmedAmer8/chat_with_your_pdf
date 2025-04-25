@@ -4,6 +4,12 @@ This is a Streamlit web app that allows you to **upload multiple PDF documents**
 
 ---
 
+## 🚀 Demo
+
+You can try it out live on **[Hugging Face Spaces](https://huggingface.co/spaces/Ahmed-Amer/Chat_with_your_PDFs)**  
+
+---
+
 ## 🧠 Features
 
 - 📄 Upload **one or more PDFs**
@@ -23,11 +29,6 @@ This is a Streamlit web app that allows you to **upload multiple PDF documents**
 - Google Generative AI (Gemini Pro)
 - PyPDF2 (PDF reading)
 
----
-
-## 🚀 Demo
-
-You can try it out live on **[Hugging Face Spaces](https://huggingface.co/spaces/Ahmed-Amer/Chat_with_your_PDFs)**  
 
 ---
 
@@ -39,6 +40,10 @@ You can try it out live on **[Hugging Face Spaces](https://huggingface.co/spaces
 git clone https://github.com/ahmedAmer8/chat-with-pdf-gemini.git
 cd chat-with-pdf-gemini
 
-*** 2. Create and activate a virtual environment (optional but recommended)
-
 ---
+
+### 2. Create and activate a virtual environment (optional but recommended)
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
