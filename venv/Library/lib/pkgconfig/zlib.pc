@@ -1,0 +1,13 @@
+prefix=D:/DATA SCIENCE/My-All-Projects/chat_with_pdf_krish/venv/Library
+exec_prefix=D:/DATA SCIENCE/My-All-Projects/chat_with_pdf_krish/venv/Library
+libdir=D:/DATA SCIENCE/My-All-Projects/chat_with_pdf_krish/venv/Library/lib
+sharedlibdir=D:/DATA SCIENCE/My-All-Projects/chat_with_pdf_krish/venv/Library/lib
+includedir=D:/DATA SCIENCE/My-All-Projects/chat_with_pdf_krish/venv/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
