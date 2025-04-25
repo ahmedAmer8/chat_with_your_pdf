@@ -39,11 +39,71 @@ You can try it out live on **[Hugging Face Spaces](https://huggingface.co/spaces
 ```bash
 git clone https://github.com/ahmedAmer8/chat-with-pdf-gemini.git
 cd chat-with-pdf-gemini
-
----
-
+````
 ### 2. Create and activate a virtual environment (optional but recommended)
 
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+````
+
+### 3. Install the dependencies
+
+```bash
+pip install -r requirements.txt
+````
+
+### 4. Set your Google API key
+Create a .env file in the root directory and add:
+
+```bash
+GOOGLE_API_KEY=your_google_api_key_here
+````
+### 5. Run the app
+```bash
+streamlit run app.py
+````
+---
+
+## ☁️ Deployment on Hugging Face Spaces
+* Push your repo to a Hugging Face Space (select SDK: Streamlit).
+
+* In your Space settings, go to "Secrets" and add:
+```makefile
+Name: GOOGLE_API_KEY
+Value: your_google_api_key_here
+````
+* Hugging Face automatically injects this as an environment variable.
+---
+
+## 📂 Project Structure
+```bash
+chat-with-pdf-gemini/
+│
+├── app.py                  # Main Streamlit app
+├── requirements.txt        # All dependencies
+├── .env                    # Your local API key (not committed)
+└── README.md               # This file
+````
+---
+
+## ⚠️ Notes
+* This app creates a local FAISS index (faiss_index/) — it will regenerate each time new PDFs are uploaded.
+
+* Your API key should have access to Gemini Pro (models/gemini-pro).
+
+---
+
+## 💬 Contact
+
+Feel free to reach out to me through any of the following platforms:
+
+- LinkedIn: [https://www.linkedin.com/in/ahmed-amer](https://www.linkedin.com/in/ahmed-amer-03b390244/)
+- Gmail: [ahmed.mohammad.amer@gmail.com](mailto:ahmed.mohammad.amer@gmail.com)
+---
+
+## ⭐️ Give it a Star!
+
+If you find this project useful, consider giving it a ⭐ on GitHub!
+
+---
